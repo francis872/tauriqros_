@@ -1,0 +1,20 @@
+pub mod desktop_runtime;
+pub mod background;
+pub mod filesystem;
+pub mod system_control;
+pub mod automation_runtime;
+pub mod session_runtime;
+pub mod runtime_supervisor;
+pub mod device_runtime;
+pub mod ai_runtime;
+pub mod security_runtime;
+pub mod identity_runtime;
+pub mod telemetry_runtime;
+pub mod orchestration_runtime;
+pub mod filesystem_intelligence;
+pub mod mesh;
+pub mod ollama_runtime;
+pub mod embedding_runtime;
+pub mod rag_runtime;
+
+pub use desktop_runtime::desktop_runtime_health;

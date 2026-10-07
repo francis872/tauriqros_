@@ -1,0 +1,15 @@
+[Unit]
+Description=TAURIQ Session Runtime Supervisor
+After=graphical-session-pre.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/tauriq-session-runtime
+Restart=always
+RestartSec=2
+Environment=TAURIQ_SESSION=1
+Environment=TAURIQ_DISPLAY_PROTOCOL=wayland
+
+[Install]
+WantedBy=default.target

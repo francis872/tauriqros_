@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+export XDG_CURRENT_DESKTOP=TAURIQ
+export XDG_SESSION_DESKTOP=TAURIQ
+export XDG_SESSION_TYPE=wayland
+export TAURIQ_SESSION=1
+export TAURIQ_RUNTIME_PROFILE=${TAURIQ_RUNTIME_PROFILE:-production}
+
+BOOTSTRAP_SCRIPT="/usr/local/share/tauriq/bootstrap/tauriq-bootstrap.sh"
+if [ -x "$BOOTSTRAP_SCRIPT" ]; then
+  "$BOOTSTRAP_SCRIPT"
+fi
+
+exec /usr/local/bin/tauriq --fullscreen --session-mode

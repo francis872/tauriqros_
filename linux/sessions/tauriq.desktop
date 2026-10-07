@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=TAURIQ
+Comment=AI-native Linux desktop session
+Exec=/usr/local/bin/tauriq-session-start
+TryExec=/usr/local/bin/tauriq-session-start
+Type=Application
+DesktopNames=TAURIQ
+X-GDM-SessionRegisters=true
+X-LightDM-DesktopName=TAURIQ

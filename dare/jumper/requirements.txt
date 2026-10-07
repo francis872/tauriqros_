@@ -1,0 +1,17 @@
+# Jumper Protocol  —  Dependencies
+# Install with: pip install -r requirements.txt
+
+# Cryptography (required)
+cryptography>=42.0.0
+
+# Post-quantum crypto (optional — enables Kyber1024 + Dilithium3)
+# Requires liboqs C library: https://github.com/open-quantum-safe/liboqs
+# liboqs-python>=0.10.0
+
+# Audio (optional — needed for real PCM I/O in examples)
+# sounddevice>=0.4.6
+# numpy>=1.26.0
+
+# Dev / testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

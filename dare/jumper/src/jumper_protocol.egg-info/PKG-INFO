@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: jumper-protocol
+Version: 1.0.0
+Summary: Jumper — Next-generation wireless communication protocol (Bluetooth successor)
+Author: DARE
+Requires-Python: >=3.11
+Requires-Dist: cryptography>=42.0.0
+Provides-Extra: pq
+Requires-Dist: liboqs-python>=0.10.0; extra == "pq"
+Provides-Extra: audio
+Requires-Dist: sounddevice>=0.4.6; extra == "audio"
+Requires-Dist: numpy>=1.26.0; extra == "audio"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.23.0; extra == "dev"
+Dynamic: author
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
